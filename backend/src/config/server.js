@@ -15,8 +15,12 @@ server.use(queryParser());
 
 //stay listening the port 3003 and if its done.. () => {}
 server.listen(port, function () {
-  console.log(`BACKEND is running on port ${port}
-  ~ Sucesso meu Consagrado :D `);
+  console.log(`
+  ===================================
+  = BACKEND is running on port ${port} =
+  = ~ Sucesso meu Consagrado :D     =
+  ===================================
+  `);
 });
 
 module.exports = server;

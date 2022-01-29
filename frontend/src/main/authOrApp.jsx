@@ -6,6 +6,7 @@ import { bindActionCreators } from 'redux'
 import App from './app'
 import Auth from '../auth/auth'
 import { validateToken } from '../auth/authActions'
+
 class AuthOrApp extends Component {
     componentWillMount() {
         if (this.props.auth.user) {

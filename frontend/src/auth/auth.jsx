@@ -29,7 +29,7 @@ class Auth extends Component {
     }
 
     render() {
-        
+
         const { loginMode } = this.state
         const { handleSubmit } = this.props
 
