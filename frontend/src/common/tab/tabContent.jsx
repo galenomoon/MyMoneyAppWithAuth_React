@@ -1,9 +1,7 @@
-import React, { Component } from 'react'
-import { bindActionCreators } from 'redux'
+import React, { Component } from "react";
+import { bindActionCreators } from "redux";
 import { connect } from 'react-redux'
-
-import { selectTab } from './tabActions'
-import If from '../operator/If'
+import If from "../operator/If";
 
 class TabContent extends Component {
     render() {
@@ -16,10 +14,9 @@ class TabContent extends Component {
                     {this.props.children}
                 </div>
             </If>
-        )
+        ) 
     }
 }
 
-const mapStateToProps = (state) => ({ tab: state.tab })
-
+const mapStateToProps = state => ({tab: state.tab})
 export default connect(mapStateToProps)(TabContent)

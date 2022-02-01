@@ -1,5 +1,4 @@
 import './auth.css'
-
 import React, { Component } from 'react'
 import { reduxForm, Field } from 'redux-form'
 import { connect } from 'react-redux'
@@ -13,27 +12,22 @@ import Messages from '../common/msg/messages'
 import Input from '../common/form/inputAuth'
 
 class Auth extends Component {
-
     constructor(props) {
         super(props)
         this.state = { loginMode: true }
     }
-
     changeMode() {
         this.setState({ loginMode: !this.state.loginMode })
     }
-
     onSubmit(values) {
         const { login, signup } = this.props
         this.state.loginMode ? login(values) : signup(values)
     }
-
     render() {
-
         const { loginMode } = this.state
         const { handleSubmit } = this.props
-
         return (
+
             <div className="login-box">
                 <div className="login-logo"><b> My</b> Money</div>
                 <div className="login-box-body">
@@ -63,12 +57,11 @@ class Auth extends Component {
                     </a>
                 </div>
                 <Messages />
-            </div>
-        )
+            </div>  
+    )
     }
 }
-
-Auth = reduxForm({ form: 'authForm' })(Auth)
-const mapDispatchToProps = dispatch => bindActionCreators({ login, signup },
-    dispatch)
-export default connect(null, mapDispatchToProps)(Auth)
+  Auth = reduxForm({form: 'authForm'})(Auth)
+  const mapDispatchToProps = dispatch => bindActionCreators({ login, signup },
+  dispatch)
+  export default connect(null, mapDispatchToProps)(Auth)

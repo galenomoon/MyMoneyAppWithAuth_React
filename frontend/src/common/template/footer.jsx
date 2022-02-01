@@ -1,12 +1,11 @@
-import React from 'react'
+import React from "react";
 
 export default props => (
-
-    <footer className='main-footer'>
+    <footer className="main-footer">
         <strong>
-            Copyright © Galeno, 2022
-            <a href="http://www.youtube.com/GuilhermeGaleno" target='_blank'>  YouTube</a>
-            <a href="http://www.github.com/galenomoon" target='_blank'>  GitHub</a>
+            Copyright &copy; 2017
+            <a href="http://cod3r.com.br" target='_blank'> Cod3r </a>.
         </strong>
     </footer>
+
 )

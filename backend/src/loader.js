@@ -1,4 +1,3 @@
-//loader.js is who will be called when my application is loaded
-const server = require('./config/server') //Application Server
-require('./config/database') //Application Database
+const server = require('./config/server')
+require('./config/database')
 require('./config/routes')(server)
